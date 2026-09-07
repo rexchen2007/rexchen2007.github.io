@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rex Chen | Portfolio</title>
+    <style>
+        :root {
+            --bg-color: #0d1117;
+            --card-bg: #161b22;
+            --text-main: #c9d1d9;
+            --text-muted: #8b949e;
+            --accent: #58a6ff;
+            --border: #30363d;
+            --tag-bg: #21262d;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-main);
+            line-height: 1.6;
+            padding: 40px 20px;
+        }
+
+        .container {
+            max-width: 680px;
+            margin: 0 auto;
+        }
+
+        header {
+            margin-bottom: 40px;
+            border-bottom: 1px solid var(--border);
+            padding-bottom: 24px;
+        }
+
+        h1 {
+            font-size: 2rem;
+            color: #ffffff;
+            margin-bottom: 8px;
+            font-weight: 600;
+            letter-spacing: -0.5px;
+        }
+
+        .bio {
+            color: var(--text-muted);
+            font-size: 1rem;
+        }
+
+        section {
+            margin-bottom: 36px;
+        }
+
+        h2 {
+            font-size: 1.2rem;
+            color: #ffffff;
+            margin-bottom: 16px;
+            font-weight: 600;
+        }
+
+        p {
+            margin-bottom: 12px;
+            color: var(--text-main);
+        }
+
+        /* 技能標籤 */
+        .tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+            margin-top: 12px;
+        }
+
+        .tag {
+            background-color: var(--tag-bg);
+            border: 1px solid var(--border);
+            padding: 4px 10px;
+            border-radius: 6px;
+            font-size: 0.85rem;
+            color: var(--text-muted);
+        }
+
+        /* 專案卡片 */
+        .project-card {
+            background-color: var(--card-bg);
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            padding: 16px 20px;
+            margin-bottom: 14px;
+            transition: border-color 0.2s ease;
+        }
+
+        .project-card:hover {
+            border-color: var(--accent);
+        }
+
+        .project-title {
+            font-size: 1.05rem;
+            font-weight: 600;
+            color: #ffffff;
+            margin-bottom: 6px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .project-desc {
+            font-size: 0.9rem;
+            color: var(--text-muted);
+        }
+
+        /* 連結樣式 */
+        a {
+            color: var(--accent);
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        .links {
+            display: flex;
+            gap: 16px;
+            margin-top: 12px;
+        }
+
+        footer {
+            margin-top: 60px;
+            font-size: 0.8rem;
+            color: var(--text-muted);
+            text-align: center;
+            border-top: 1px solid var(--border);
+            padding-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <!-- 個人頭部介紹 -->
+        <header>
+            <h1>Rex Chen</h1>
+            <div class="bio">CS Student</div>
+            <div class="links">
+                <a href="https://github.com/rexchen2007" target="_blank">GitHub</a>
+                <a href="mail:rexchen2007@gmail.com">Email</a>
+            </div>
+        </header>
+
+        <!-- 關於我 -->
+        <section>
+            <h2>About</h2>
+            <p>
+                嗨！我是陳裔喆。
+            </p>
+            <div class="tags">
+                <span class="tag">C#</span>
+                <span class="tag">Unity</span>
+                <span class="tag">C++</span>
+            </div>
+        </section>
+    </div>
+
+</body>
+</html>
